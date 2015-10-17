@@ -33,4 +33,10 @@ describe('api-starter-pack:app', function () {
     assert.fileContent('package.json', /"name": "new-api-test"/);
     assert.fileContent('readme.md', "New API Test");
   });
+
+  it('inserts project name into config files', function() {
+    assert.fileContent('config/config.development.js', 'new-api-test-dev');
+    assert.fileContent('config/config.production.js', 'new-api-test-prod');
+    assert.fileContent('config/config.test.js', 'new-api-test-test');
+  });
 });

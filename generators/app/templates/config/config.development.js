@@ -1,6 +1,6 @@
 var config = require('./config.global');
 
 config.env = 'development';
-config.mongo.db = 'api_dev';
+config.mongo.db = '<%= projectName %>-dev';
 
 module.exports = config;
