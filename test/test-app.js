@@ -18,7 +18,8 @@ describe('api-starter-pack:app', function () {
       'package.json',
       '.gitignore',
       'readme.md',
-      'app.js'
+      'app.js',
+      'api/index.js'
     ]);
   });
 
