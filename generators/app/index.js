@@ -38,6 +38,7 @@ module.exports = yeoman.generators.Base.extend({
     app: function () {
       this.fs.copy(this.templatePath('app.js'), this.destinationPath('app.js'));
       this.fs.copy(this.templatePath('api/index.js'), this.destinationPath('api/index.js'));
+      this.fs.copy(this.templatePath('bin/www'), this.destinationPath('bin/www'));
     }
   },
 
