@@ -20,7 +20,12 @@ describe('api-starter-pack:app', function () {
       'readme.md',
       'app.js',
       'api/index.js',
-      'bin/www'
+      'bin/www',
+      'config/index.js',
+      'config/config.global.js',
+      'config/config.development.js',
+      'config/config.production.js',
+      'config/config.test.js'
     ]);
   });
 

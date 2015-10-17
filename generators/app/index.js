@@ -39,6 +39,11 @@ module.exports = yeoman.generators.Base.extend({
       this.fs.copy(this.templatePath('app.js'), this.destinationPath('app.js'));
       this.fs.copy(this.templatePath('api/index.js'), this.destinationPath('api/index.js'));
       this.fs.copy(this.templatePath('bin/www'), this.destinationPath('bin/www'));
+      this.fs.copy(this.templatePath('config/index.js'), this.destinationPath('config/index.js'));
+      this.fs.copy(this.templatePath('config/config.global.js'), this.destinationPath('config/config.global.js'));
+      this.fs.copy(this.templatePath('config/config.development.js'), this.destinationPath('config/config.development.js'));
+      this.fs.copy(this.templatePath('config/config.production.js'), this.destinationPath('config/config.production.js'));
+      this.fs.copy(this.templatePath('config/config.test.js'), this.destinationPath('config/config.test.js'));
     }
   },
 
