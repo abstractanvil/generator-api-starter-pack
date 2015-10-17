@@ -44,6 +44,7 @@ module.exports = yeoman.generators.Base.extend({
       this.fs.copyTpl(this.templatePath('config/config.development.js'), this.destinationPath('config/config.development.js'), this.props);
       this.fs.copyTpl(this.templatePath('config/config.production.js'), this.destinationPath('config/config.production.js'), this.props);
       this.fs.copyTpl(this.templatePath('config/config.test.js'), this.destinationPath('config/config.test.js'), this.props);
+      this.fs.copy(this.templatePath('models/message.js'), this.destinationPath('models/message.js'));
     }
   },
 

@@ -25,7 +25,8 @@ describe('api-starter-pack:app', function () {
       'config/config.global.js',
       'config/config.development.js',
       'config/config.production.js',
-      'config/config.test.js'
+      'config/config.test.js',
+      'models/message.js'
     ]);
   });
 
