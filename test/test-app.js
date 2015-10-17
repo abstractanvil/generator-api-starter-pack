@@ -17,7 +17,8 @@ describe('api-starter-pack:app', function () {
     assert.file([
       'package.json',
       '.gitignore',
-      'readme.md'
+      'readme.md',
+      'app.js'
     ]);
   });
 
