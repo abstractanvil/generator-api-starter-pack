@@ -15,7 +15,8 @@ describe('api-starter-pack:app', function () {
 
   it('creates files', function () {
     assert.file([
-      'package.json'
+      'package.json',
+      '.gitignore'
     ]);
   });
 });

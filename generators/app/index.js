@@ -30,6 +30,7 @@ module.exports = yeoman.generators.Base.extend({
   writing: {
     root: function () {
       this.fs.copyTpl(this.templatePath('_package.json'), this.destinationPath('package.json'), this.props);
+      this.fs.copyTpl(this.templatePath('gitignore'), this.destinationPath('.gitignore'), this.props);
     }
   },
 
