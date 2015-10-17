@@ -9,7 +9,7 @@ describe('api-starter-pack:app', function () {
   before(function (done) {
     helpers.run(path.join(__dirname, '../generators/app'))
       .withOptions({ skipInstall: true })
-      .withPrompts({ someOption: true })
+      .withPrompts({ name: 'New API Test' })
       .on('end', done);
   });
 
@@ -19,5 +19,10 @@ describe('api-starter-pack:app', function () {
       '.gitignore',
       'readme.md'
     ]);
+  });
+
+  it('inserts user info into project files', function () {
+    assert.fileContent('package.json', /"name": "new-api-test"/);
+    assert.fileContent('readme.md', "New API Test");
   });
 });
